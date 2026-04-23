@@ -27,7 +27,7 @@ Target: scanme.nmap.org
 Command:
 
 ```
-nmap -sS -A scanme.nmap.org -oN scan1.txt
+nmap -sS -A scanme.nmap.org -oN or3ali.txt
 ```
 
 ## Findings
