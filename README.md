@@ -4,7 +4,7 @@ This repository documents my hands-on experience using Nmap for network scanning
 
 ## Tool
 
-- Nmap (network scanning and enumeration)
+* Nmap (network scanning and enumeration)
 
 ## Objectives
 
@@ -22,9 +22,9 @@ This repository documents my hands-on experience using Nmap for network scanning
 
 ## Sample Scan
 
-Target: scanme.nmap.org
+**Target:** scanme.nmap.org
 
-Command:
+**Command:**
 
 ```
 nmap -sS -A scanme.nmap.org -oN or3ali.txt
@@ -32,19 +32,21 @@ nmap -sS -A scanme.nmap.org -oN or3ali.txt
 
 ## Findings
 
-- Discovered open ports: 22, 80, 9929, 1337
-- Filtered ports detected: 25 (SMTP), 5060 (SIP)
+* Discovered open ports: 22, 80, 9929, 1337
+* Filtered ports detected: 25 (SMTP), 5060 (SIP)
 
-- Service enumeration results:
-  - 22 → SSH (tcpwrapped)
-  - 80 → HTTP (Apache 2.4.7 - Ubuntu)
-  - 9929 → Nping Echo
-  - 1337 → tcpwrapped
+### Service Enumeration
 
-- Additional observations:
-  - Target is running Linux (kernel 4.x - 5.x)
-  - HTTP service identified with Apache server
-  - Network distance: ~22 hops
+* 22 → SSH (tcpwrapped)
+* 80 → HTTP (Apache 2.4.7 - Ubuntu)
+* 9929 → Nping Echo
+* 1337 → tcpwrapped
+
+### Additional Observations
+
+* Target is running Linux (kernel 4.x – 5.x)
+* HTTP service identified with Apache server
+* Network distance: ~22 hops
 
 ## Output
 
@@ -56,3 +58,10 @@ Scan results are saved in:
 
 * All scans are performed on authorized targets (e.g., scanme.nmap.org)
 * This repository is for educational and ethical cybersecurity practice only
+
+## Skills Demonstrated
+
+* Network scanning
+* Port enumeration
+* Service detection
+* Basic reconnaissance methodology
