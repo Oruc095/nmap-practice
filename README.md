@@ -32,13 +32,19 @@ nmap -sS -A scanme.nmap.org -oN or3ali.txt
 
 ## Findings
 
-* Open ports discovered (e.g., 22, 80, 443)
-* Service enumeration performed:
+- Discovered open ports: 22, 80, 9929, 1337
+- Filtered ports detected: 25 (SMTP), 5060 (SIP)
 
-  * 22 → SSH
-  * 80 → HTTP
-  * 443 → HTTPS
-* Basic OS detection completed
+- Service enumeration results:
+  - 22 → SSH (tcpwrapped)
+  - 80 → HTTP (Apache 2.4.7 - Ubuntu)
+  - 9929 → Nping Echo
+  - 1337 → tcpwrapped
+
+- Additional observations:
+  - Target is running Linux (kernel 4.x - 5.x)
+  - HTTP service identified with Apache server
+  - Network distance: ~22 hops
 
 ## Output
 
